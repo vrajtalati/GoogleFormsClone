@@ -35,14 +35,16 @@ Partial Class FormViewSubmission
         lblStopwatch = New TextBox()
         Label6 = New Label()
         btnNext = New Button()
+        btnDelete = New Button()
+        btnUpdate = New Button()
         SuspendLayout()
         ' 
         ' btnPrevious
         ' 
         btnPrevious.BackColor = SystemColors.Info
-        btnPrevious.Location = New Point(112, 560)
+        btnPrevious.Location = New Point(12, 560)
         btnPrevious.Name = "btnPrevious"
-        btnPrevious.Size = New Size(358, 87)
+        btnPrevious.Size = New Size(197, 87)
         btnPrevious.TabIndex = 21
         btnPrevious.Text = "PREVIOUS(CTRL+P)"
         btnPrevious.UseVisualStyleBackColor = False
@@ -147,12 +149,32 @@ Partial Class FormViewSubmission
         ' btnNext
         ' 
         btnNext.BackColor = SystemColors.ActiveCaption
-        btnNext.Location = New Point(521, 560)
+        btnNext.Location = New Point(266, 560)
         btnNext.Name = "btnNext"
-        btnNext.Size = New Size(358, 87)
+        btnNext.Size = New Size(195, 87)
         btnNext.TabIndex = 25
         btnNext.Text = "NEXT(CTRL+N)"
         btnNext.UseVisualStyleBackColor = False
+        ' 
+        ' btnDelete
+        ' 
+        btnDelete.BackColor = SystemColors.ActiveBorder
+        btnDelete.Location = New Point(515, 560)
+        btnDelete.Name = "btnDelete"
+        btnDelete.Size = New Size(195, 87)
+        btnDelete.TabIndex = 26
+        btnDelete.Text = "DELETE"
+        btnDelete.UseVisualStyleBackColor = False
+        ' 
+        ' btnUpdate
+        ' 
+        btnUpdate.BackColor = SystemColors.ButtonFace
+        btnUpdate.Location = New Point(738, 560)
+        btnUpdate.Name = "btnUpdate"
+        btnUpdate.Size = New Size(195, 87)
+        btnUpdate.TabIndex = 27
+        btnUpdate.Text = "UPDATE"
+        btnUpdate.UseVisualStyleBackColor = False
         ' 
         ' FormViewSubmission
         ' 
@@ -160,6 +182,8 @@ Partial Class FormViewSubmission
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonHighlight
         ClientSize = New Size(959, 671)
+        Controls.Add(btnUpdate)
+        Controls.Add(btnDelete)
         Controls.Add(btnNext)
         Controls.Add(lblStopwatch)
         Controls.Add(Label6)
@@ -192,4 +216,6 @@ Partial Class FormViewSubmission
     Friend WithEvents lblStopwatch As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents btnNext As Button
+    Friend WithEvents btnDelete As Button
+    Friend WithEvents btnUpdate As Button
 End Class
