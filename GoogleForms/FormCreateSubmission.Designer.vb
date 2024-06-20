@@ -97,11 +97,11 @@ Partial Class FormCreateSubmission
         ' 
         ' txtPhone
         ' 
+        txtPhone.HideSelection = False
         txtPhone.Location = New Point(252, 262)
         txtPhone.Name = "txtPhone"
         txtPhone.Size = New Size(423, 39)
         txtPhone.TabIndex = 7
-        txtPhone.UseSystemPasswordChar = True
         ' 
         ' txtGithub
         ' 
